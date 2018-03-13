@@ -1,4 +1,4 @@
-#  PIES (Promoter Interacting Enhancers Search)
+#  IEat (Interacting Enhancers and Targets)
 A tool that combines Gro-Seq and Chip-Seq data to predict enhancer and promoter interactions. We present one workflow derivative of [TargetFinder](https://github.com/shwhalen/targetfinder) and [ChromHMM](http://compbio.mit.edu/ChromHMM/) as a searchable example.
 
 ### Problem
@@ -22,3 +22,5 @@ docker run -it -v `pwd`:/data enhancer
 Run `./generate_region.sh`
 
 ### Machine Learning
+
+http://scikit-learn.org/stable/tutorial/statistical_inference/supervised_learning.html
