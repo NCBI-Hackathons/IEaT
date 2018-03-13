@@ -30,7 +30,7 @@ RUN apt-get update && \
     apt-get clean && \
     apt-get purge && \
     conda install bedtools=2.25.0 && \
-	pip3 install numpy pysam scipy pandas scikit-learn numexpr && \
+	pip3 install numpy pysam scipy pandas==0.17.1 scikit-learn==0.17 numexpr==2.4.6 && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 
