@@ -12,13 +12,13 @@ Biologists are manually searching for enhancer promoter interacting pairs becaus
 - Experimentalists looking to build their own model but who cannot meet provide the data demanded by other methods can follow our minimalist approach
 
 ### Installation
-1. Install Docker
-2. ``
-git clone https://github.com/NCBI-Hackathons/enhancertargets.git ``
-``
-cd enhancertargets ``
-``docker build . -t enhancer``
-``docker run -it -v `pwd`:/data enhancer
-``
-3. Run python generate_region.sh
-4. Run the machine learning process
+```
+git clone https://github.com/NCBI-Hackathons/enhancertargets.git
+cd enhancertargets 
+docker build . -t enhancer
+docker run -it -v `pwd`:/data enhancer
+```
+### Data Preparation
+Run `./generate_region.sh`
+
+### Machine Learning
