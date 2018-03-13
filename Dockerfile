@@ -1,20 +1,39 @@
-# Base Image
-FROM ncbihackathon/ncbihackathonbase
+FROM biocontainers/biocontainers:latest
 
 # Metadata
-LABEL base.image="bioconductor:latest"
+LABEL base.image="biocontainers:latest"
 LABEL version="1"
-LABEL software="NCBI Hackathon Image with Bioconductor and Extra R packages"
+LABEL software="NCBI Hackathon Base Image"
 LABEL software.version="0.0.1"
-LABEL description="NCBI Hackathons Image with Bioconductor and Extra R packages"
+LABEL description="Base image for NCBI Hackathons Projects"
+LABEL website="https://github.com/NCBI-Hackathons/HackathonDockerImages/Docker/base"
+LABEL documentation="https://github.com/NCBI-Hackathons/HackathonBaseImages/blob/master/Docker/README.md"
+LABEL license="https://github.com/NCBI-Hackathons/HackathonDockerImages/LICENSE"
+LABEL tags="NCBI, Hackathon"
+
+# Maintainer
+MAINTAINER Roberto Vera Alvarez <r78v10a07@gmail.com>
 
 USER root
 
-RUN conda install bedtools=2.25.0
-RUN pip3 install panda>=0.17.1 scikit-learn>=0.17 numexpr>=2.4.6
-# RUN rm -f /usr/bin/python 
-# RUN conda install python=3.5
-# RUN ln -s /usr/bin/python /usr/bin/python3
+RUN apt-get update && \
+    apt-get install -y \
+        libncurses5-dev \
+        libncursesw5-dev \
+		libbz2-dev \
+		lzma lzma-dev liblzma-dev \
+		libcurl4-gnutls-dev \
+		python3 python3-pip \
+		nodejs npm \
+		liblwp-protocol-https-perl \
+		r-base r-base-dev && \
+    apt-get clean && \
+    apt-get purge && \
+    conda install bedtools=2.25.0 && \
+	pip3 install numpy pysam scipy pandas scikit-learn numexpr && \
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+USER biodocker
 
+WORKDIR /data/
 

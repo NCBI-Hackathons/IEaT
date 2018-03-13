@@ -1,0 +1,11 @@
+version: "2"
+services:
+  pipeline:
+    container_name: enhancer 
+    build: .
+    ports:
+      - "80:80"
+    command: bash
+    tty: true
+    volumes:
+      - ./:/data
