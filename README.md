@@ -6,6 +6,7 @@ Biologists are manually searching for enhancer promoter interacting pairs becaus
 
 ### Approach
 ![Minimal Workflow](https://raw.githubusercontent.com/NCBI-Hackathons/enhancertargets/master/img/MinWorkflow.png)
+Adapted from Hector L. Franco et al. Genome Res. 2018;28:159-170
 
 ### Use cases
  - Experimentalists with data that is similar to [MCF-7 cell line](https://en.wikipedia.org/wiki/MCF-7) can directly query our model [Here](list-of-interactions)
