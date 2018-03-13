@@ -14,7 +14,7 @@ Biologists are manually searching for enhancer promoter interacting pairs becaus
 ### Installation
 1. Install Docker
 2. docker run image
-3. Run python generate_enhancer.py
+3. Run ./generate_region.sh
 4. Train
 
 ### HackathonBaseImages
