@@ -3,9 +3,6 @@
 # Troubleshooting
 We present our failures to assist future biologists attempting to implement promoter-enhancer-interaction prediction.
 
-### Problem
-Biologists are manually searching for enhancer promoter interacting pairs because it is [difficult](https://github.com/NCBI-Hackathons/enhancertargets/blob/master/TroubleShooting.md) to build a predictor specific to each experimental system. 
-
 ### Docker only has the dependencies it is born with
 When your tools require old versions of software,
 ```
