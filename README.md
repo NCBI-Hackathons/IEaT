@@ -1,4 +1,4 @@
-#  IEat (Interacting Enhancers and Targets)
+#  IEaT (Interacting Enhancers and Targets)
 
 A docker for running [JEME](https://github.com/yiplabcuhk/JEME) (by Yip Lab) analysis.
 
