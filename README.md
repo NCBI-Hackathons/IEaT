@@ -1,6 +1,6 @@
 #  IEaT (Interacting Enhancers and Targets)
 
-![alt text](https://png.pngtree.com/element_pic/17/03/04/4a507e6a66d585f2b79295c65794d24a.jpg)
+![alt text](https://png.pngtree.com/element_pic/17/03/04/4a507e6a66d585f2b79295c65794d24a.jpg "I EaT")
 
 A docker for running [JEME](https://github.com/yiplabcuhk/JEME) (by Yip Lab) analysis.
 
