@@ -4,7 +4,7 @@
 
 A docker for running [JEME](https://github.com/yiplabcuhk/JEME) (by Yip Lab) analysis.
 
-Some biologists manually searching for enhancer promoter interacting pairs because it is [difficult](https://github.com/NCBI-Hackathons/enhancertargets/blob/master/TroubleShooting.md) to build a predictor specific to each experimental system. Some tools like JEME exist, but they are opaque. We will explore JEME methods with docker.
+Some biologists manually searching for enhancer promoter interacting pairs because it is [difficult](https://github.com/NCBI-Hackathons/enhancertargets/blob/master/TroubleShooting.md) to [build a predictor](https://docs.google.com/presentation/d/1smCxGFrgfo06YGImBy1E2dL7s6jyneLsxz3GwmQHQYE/edit?usp=sharing) specific to each experimental system. Some tools like JEME exist, but they are opaque. We will explore JEME methods with docker.
 
 ### Gather Data
 Test JEME with their [published data](https://www.dropbox.com/sh/wjyqyog3p5d33kh/AABUY-OSsV8CQD4TFPRGzp8Na?dl=0)
