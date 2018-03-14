@@ -18,8 +18,8 @@ cd JEME/JEME_code/Roadmap/1_first_step_modeling/1MB_intervals
 
 - Next, build the JEME docker.
 ```
-git clone https://github.com/NCBI-Hackathons/IEat.git
-cd IEat
+git clone https://github.com/NCBI-Hackathons/IEaT.git
+cd IEaT
 docker build . -t jeme
 ```
 - Navigate to the data and run docker.
