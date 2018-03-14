@@ -1,4 +1,0 @@
-panda
-scikit-learn
-numexpr
-tables
